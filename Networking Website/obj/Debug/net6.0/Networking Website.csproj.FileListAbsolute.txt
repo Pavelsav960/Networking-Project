@@ -1,0 +1,76 @@
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\appsettings.Development.json
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\appsettings.json
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Networking Website.staticwebassets.runtime.json
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Networking Website.exe
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Networking Website.deps.json
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Networking Website.runtimeconfig.json
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Networking Website.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Networking Website.pdb
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Humanizer.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\GitHub\Networking-Project\Networking Website\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\Networking Website.csproj.AssemblyReference.cache
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\Networking Website.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\Networking Website.AssemblyInfoInputs.cache
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\Networking Website.AssemblyInfo.cs
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\Networking Website.csproj.CoreCompileInputs.cache
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\Networking Website.MvcApplicationPartsAssemblyInfo.cs
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\Networking Website.MvcApplicationPartsAssemblyInfo.cache
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\Networking Website.RazorAssemblyInfo.cache
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\Networking Website.RazorAssemblyInfo.cs
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\staticwebassets\msbuild.Networking Website.Microsoft.AspNetCore.StaticWebAssets.props
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\staticwebassets\msbuild.build.Networking Website.props
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Networking Website.props
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Networking Website.props
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\staticwebassets.pack.json
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\staticwebassets.build.json
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\staticwebassets.development.json
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\scopedcss\bundle\Networking Website.styles.css
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\scopedcss\projectbundle\Networking Website.bundle.scp.css
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\Networking Website.csproj.CopyComplete
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\Networking Website.dll
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\refint\Networking Website.dll
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\Networking Website.pdb
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\Networking Website.genruntimeconfig.cache
+C:\GitHub\Networking-Project\Networking Website\obj\Debug\net6.0\ref\Networking Website.dll

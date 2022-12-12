@@ -13,4 +13,21 @@
         <a asp-action="Create" class="btn btn-info">&nbsp; New Flight Type</a>
     </div>
 </div>
-<h1>Index</h1>
+<br />
+<div>
+    <table class="table table-striped border">
+        <tr class="table-info">
+            <th>
+                @Html.DisplayNameFor(c=>c.FlightType)
+            </th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FlightType</td>
+                <td>Edit | Details | Delete</td>
+            </tr>
+        }
+    </table>
+</div>

@@ -149,7 +149,7 @@ namespace Networking_Website.Areas.Admin.Controllers
 
             if (ModelState.IsValid)
             {
-                _db.Remove(flightTypes);
+                _db.Remove(flightType);
                 await _db.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }

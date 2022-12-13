@@ -42,6 +42,123 @@ namespace Networking_Website.Areas.Admin.Controllers
         }
 
 
+        //----------------
+
+        //GET Edit Action Method
+        public ActionResult Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            
+            var flightType = _db.FlightTypes.Find(id);
+            if (flightType == null) 
+            {
+                return NotFound();
+            }
+            return View();
+        }
+
+
+        //Edit Post Action Method
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(FlightTypes flightTypes)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.Update(flightTypes);
+                await _db.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(flightTypes);
+        }
+
+
+        //----------------
+
+        //Details Get Action Method
+        public ActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var flightType = _db.FlightTypes.Find(id);
+            if (flightType == null)
+            {
+                return NotFound();
+            }
+            return View(flightType);
+        }
+
+
+        ////Create Post Action Method
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Details(FlightTypes flightTypes)
+        {
+            return RedirectToAction(nameof(Index));
+        }
+
+
+
+        //----------------
+
+        //GET Edit Action Method
+        public ActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var flightType = _db.FlightTypes.Find(id);
+
+            if (flightType == null)
+            {
+                return NotFound();
+            }
+            return View(flightType);
+        }
+
+
+        //Edit Post Action Method
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int? id,FlightTypes flightTypes)
+        {
+            if(id == null)
+            {
+                return NotFound();
+            }
+
+            if(id!=flightTypes.Id)
+            {
+                return NotFound();
+            }
+
+            var flightType = _db.FlightTypes.Find(id);
+
+            if (flightType == null)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                _db.Remove(flightTypes);
+                await _db.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(flightTypes);
+        }
+
+
+
 
 
     }

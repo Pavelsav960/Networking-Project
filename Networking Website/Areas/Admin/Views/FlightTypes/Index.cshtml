@@ -10,7 +10,7 @@
         <h2 class="text-info">Flight Type List</h2>
     </div>
     <div class="col-6 text-lg-end">
-        <a asp-action="Create" class="btn btn-info">&nbsp; New Flight Type</a>
+        <a asp-action="Create" class="btn btn-info"><i class="fa-solid fa-plus"></i>&nbsp; New Flight Type</a>
     </div>
 </div>
 <br />
@@ -21,12 +21,15 @@
                 @Html.DisplayNameFor(c=>c.FlightType)
             </th>
             <th></th>
+            <th></th>
         </tr>
         @foreach (var item in Model)
         {
             <tr>
                 <td>@item.FlightType</td>
-                <td>Edit | Details | Delete</td>
+                <td>
+                    <partial name ="_ButtonPartial" model="@item.Id"/>
+                </td>
             </tr>
         }
     </table>

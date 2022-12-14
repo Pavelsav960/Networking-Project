@@ -39,5 +39,94 @@ namespace Networking_Website.Areas.Admin.Controllers
 
         }
 
+        //GET Edit method
+        public IActionResult Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var flight = _db.Flights.Find(id);
+            if (flight == null)
+            {
+                return NotFound();
+            }
+
+            return View(flight);
+        }
+
+        //POST edit method
+        [HttpPost]
+        public async Task<IActionResult> Edit(Flights flights)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.Flights.Update(flights);
+                await _db.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(flights);
+        }
+
+        //GET details method
+        public IActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var flight = _db.Flights.Find(id);
+            if(flight == null)
+            {
+                return NotFound();
+            }
+
+            return View(flight);
+        }
+
+
+        //GET Delete method
+        public IActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var flight = _db.Flights.Find(id);
+            if (flight == null)
+            {
+                return NotFound();
+            }
+
+            return View(flight);
+        }
+
+        //POST edit method
+        [HttpPost]
+        [ActionName("Delete")]
+        public async Task<IActionResult> DeleteConfrim(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var flight = _db.Flights.Find(id);
+
+            if (flight == null)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                _db.Remove(flight);
+                await _db.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(flight);
+        }
     }
+
 }

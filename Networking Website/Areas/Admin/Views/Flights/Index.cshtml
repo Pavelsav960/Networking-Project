@@ -1,0 +1,61 @@
+﻿@using Networking_Website.Models
+@model IEnumerable<Flights>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<br />
+<br />
+<div class="row">
+    <div class="col-6">
+        <h2 class="text-info">Flight List</h2>
+    </div>
+    <div class="col-6 text-lg-end">
+        <a asp-action="Create" class="btn btn-info"><i class="fa-solid fa-plus"></i>&nbsp;Add New Flight</a>
+    </div>
+</div>
+<br />
+<div>
+    <table class="table table-striped border">
+        <tr class="table-info">
+            <th>
+                @Html.DisplayNameFor(c=>c.OriginCountry)
+            </th>
+            <th>
+                @Html.DisplayNameFor(c=>c.DestinationCountry)
+            </th>
+            <th>
+                @Html.DisplayNameFor(c=>c.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(c=>c.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(c=>c.Time)
+            </th>
+            <th>
+                @Html.DisplayNameFor(c=>c.IsDirect)
+            </th>
+            <th>
+                @Html.DisplayNameFor(c=>c.IsOneWay)
+            </th>
+            <th></th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.OriginCountry</td>
+                <td>@item.DestinationCountry</td>
+                <td>@item.Price</td>
+                <td>@item.Date</td>
+                <td>@item.Time</td>
+                <td>@item.IsDirect</td>
+                <td>@item.IsOneWay</td>
+                <td>
+                    <partial name="_ButtonPartial" model="@item.Id" />
+                </td>
+            </tr>
+        }
+    </table>
+</div>

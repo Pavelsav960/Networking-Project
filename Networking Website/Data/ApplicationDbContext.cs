@@ -12,5 +12,6 @@ namespace Networking_Website.Data
         }
 
         public DbSet<FlightTypes> FlightTypes { get; set; }
+        public DbSet<Flights> Flights { get; set; }
     }
 }

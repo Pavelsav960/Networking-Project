@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Networking_Website.Data;
 using Networking_Website.Models;
 using System.Diagnostics;
 
@@ -7,16 +8,18 @@ namespace Networking_Website.Areas.Customer.Controllers
     [Area("customer")]
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+
+        private ApplicationDbContext _db;
+
+        public HomeController(ApplicationDbContext db)
         {
-            _logger = logger;
+            this._db = db;
         }
 
         public IActionResult Index()
         {
-            return View();
+            return View(_db.Flights.ToList());
         }
 
         public IActionResult Privacy()
@@ -29,5 +32,30 @@ namespace Networking_Website.Areas.Customer.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        //Get Book action method
+        public ActionResult Detail(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var flight = _db.Flights.Find(id);
+            if (flight == null)
+            {
+                return NotFound();
+            }
+            return View(flight);
+
+        }
     }
 }
+
+
+
+
+
+
+
+

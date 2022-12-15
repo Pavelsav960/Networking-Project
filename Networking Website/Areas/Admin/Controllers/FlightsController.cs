@@ -19,6 +19,19 @@ namespace Networking_Website.Areas.Admin.Controllers
             this._db = db;
         }
 
+        //GET index action method
+        [HttpPost]
+        public IActionResult Index(decimal? lowAmount , decimal? largeAmount)
+        {
+            var flights = _db.Flights.Where(c => c.Price >= lowAmount && c.Price <= largeAmount).ToList();
+            if(lowAmount == null || largeAmount == null)
+            {
+                flights = _db.Flights.ToList();
+            }
+            return View(flights);
+            
+        }
+
         //Get Create method
         public IActionResult Create()
         {

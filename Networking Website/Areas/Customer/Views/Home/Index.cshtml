@@ -1,8 +1,117 @@
-﻿@{
+﻿@using Networking_Website.Models;
+@model IEnumerable<Flights>
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+<br />
+<br />
+@*<div class="row">
+    @foreach (var flight in Model)
+    {
+        <div class="col-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">
+                        <label style="font-size: 23px;color: steelblue">@flight.OriginCountry - @flight.DestinationCountry</label>
+                    </h4>
+                </div>
+                
+                <div class="card-header">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <label style="font-size: 20px;color: #a51313"><b>Price : @flight.Price</b></label>
+                        </div>
+                        <a asp-action="Detail" asp-controller="Home" asp-route-id="@flight.Id" class="btn btn-success pull-right btn-outline-info">Deatils</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>*@
+
+<div class="row">
+    <div class="col-6">
+        <h2 class="text-info">Flight List</h2>
+    </div>
 </div>
+
+<form method="post">
+    <div class="row">
+        <div class="col-3">
+            <input type="number" class="form-control" name="lowAmount" />
+        </div>
+        <div class="col-3">
+            <input type="number" class="form-control" name="largeAmount" />
+        </div>
+        <div class="col-3">
+            <input type="submit" value="Search" class="btn btn-success" />
+        </div>
+        <div class="col-3"></div>
+    </div>
+</form>
+
+<br />
+<div>
+    <table class="table table-striped border" id="userTabel">
+        <thead>
+            <tr class="table-info">
+                <th>
+                    @Html.DisplayNameFor(c=>c.OriginCountry)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(c=>c.DestinationCountry)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(c=>c.Price)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(c=>c.Date)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(c=>c.Time)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(c=>c.IsDirect)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(c=>c.IsOneWay)
+                </th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.OriginCountry</td>
+                    <td>@item.DestinationCountry</td>
+                    <td>@item.Price</td>
+                    <td>@item.Date</td>
+                    <td>@item.Time</td>
+                    <td>@item.IsDirect</td>
+                    <td>@item.IsOneWay</td>
+                    <td>
+                        <a asp-action="Detail" asp-controller="Home" asp-route-id="@item.Id" class="btn btn-primary pull-right">Book</a>
+                       @* <partial name="_ButtonPartial" model="@item.Id" />*@
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+
+
+    </table>
+</div>
+
+
+@*@section Scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#userTabel').DataTable();
+        });
+    </script>
+}        *@

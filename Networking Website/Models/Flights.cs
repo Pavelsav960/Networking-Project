@@ -16,6 +16,7 @@ namespace Networking_Website.Models
         public string Time { get; set; }
         public bool IsDirect { get; set; }
         public bool IsOneWay { get; set; }
+        
 
     }
 }
